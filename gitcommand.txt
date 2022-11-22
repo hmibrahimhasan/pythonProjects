@@ -1,0 +1,61 @@
+config
+git config --global user.name Ibrahim
+git config --global user.email ih986680@gmail.com
+
+initialize file and folder
+git init 
+
+add to staged
+git add file name #saperate file
+git add -A #All file
+git add . #staged all file in a folder
+
+reset
+git reset #reset all file and demoted to unstaged
+gir reset --hard   #hard reset
+
+commit
+git commit
+I
+write a comment
+:wq
+onother and easy way for commit
+git commit -m "write a comment"
+
+roll back
+git cheakout filename
+git cheakout -f  #all file roll back
+
+log
+git log #command for all working log 
+git log -p -1  #command for separate log
+
+diff
+git diff  	   #compare differances for recent to current
+git diff --staged  #compare to staged file
+
+remove
+git rm filename 	#remove a file
+gir rm filename -f	#forcefully remove a file
+
+ignore
+.gitignore 	#unnecessery filelist a this file is not tracked
+
+branch
+
+marge
+
+confirmation
+gir origin -v
+
+push to github
+change http to ssh
+git remote add origin git@github.com:projectname.git
+ssh-keygen -t rsa -b 4096 -C "ih986680@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add file/path/created ssh keygen file name
+git push -u origin branch_name
+
+
+
+
